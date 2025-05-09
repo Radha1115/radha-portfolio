@@ -2,89 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Radha Sharma | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Radha Sharma| Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1, h2, h3 {
-      color: #444;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .contact span {
-      display: block;
-    }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; margin: 0; padding: 0; }
+    header { background: #333; color: white; padding: 20px 0; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    .container { padding: 20px; max-width: 1000px; margin: auto; background: white; }
+    section { margin-bottom: 40px; }
+    h1, h2 { color: #333; }
+    footer { background: #eee; text-align: center; padding: 15px; }
+    .project { background: #f1f1f1; padding: 15px; border-radius: 5px; margin-bottom: 15px; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Radha Sharma</h1>
-    <div class="contact">
-      <span>Ahmedabad, Gujarat, India</span>
-      <span>Email: <a href="mailto:radhasharma1115@gmail.com">radhasharma1115@gmail.com</a></span>
-      <span>Phone: +91 87800 32171</span>
-      <span>LinkedIn: <a href="https://www.linkedin.com/in/radha-sharma-238249193" target="_blank">View Profile</a></span>
-    </div>
 
-    <div class="section">
-      <h2>Professional Summary</h2>
-      <p>Motivated and detail-oriented Software Developer with 3 years of experience in Magento development, theme customization, REST API integration, and module development. Adept in backend and frontend technologies with a strong foundation in PHP and MySQL. Also experienced in data entry and basic data analysis using Excel and Python.</p>
-    </div>
+<header>
+  <h1>Radha Sharma</h1>
+  <p>Software Developer | Data Analyst Enthusiast | Open to Internships</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>PHP, MySQL, JavaScript, jQuery, HTML, CSS, AJAX</li>
-        <li>Magento 1 & 2, Linux (LAMP stack)</li>
-        <li>Git, REST APIs, Postman, VS Code</li>
-        <li>Data Entry, MS Excel, Web Research</li>
-      </ul>
-    </div>
+<div class="container">
 
-    <div class="section">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Online Food Ordering System:</strong> Built a dynamic web app using PHP & MySQL to manage orders and delivery tracking.</li>
-        <li><strong>Lensrrnt.ch & Thaimad.dk:</strong> Dedicated Magento 2 developer for theme customization, REST APIs, and module work.</li>
-      </ul>
-    </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a versatile software developer with 3 years of hands-on experience in Magento development and a strong interest in data analytics and automation. I have built and customized e-commerce platforms using Magento and PHP, and I enjoy building tools that solve real-world problems. I'm currently open to Magento/PHP roles, internships in data science or software development, and freelance opportunities in data entry or automation.</p>
+  </section>
 
-    <div class="section">
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: PHP, Python, JavaScript, Jquery</li>
+      <li>Web: HTML, CSS, Magento, React</li>
+      <li>Data Tools: SQL, Excel</li>
+      <li>Backend: MySQL, REST APIs, Magento 2</li>
+      <li>Others: Git, Composer, E-commerce Systems, VS Code, Linux, Data Entry, MS Excel, Web Research </li>
+    </ul>
+  </section>
+
+  <div class="section">
       <h2>Experience</h2>
       <p><strong>Aktiv Software</strong> – Magento Developer<br />
       Customized themes, developed modules, and created REST APIs.</p>
       <p><strong>iFlair Technologies</strong> – Magento Developer<br />
       Worked on client-based Magento development, including third-party integrations and reservation systems.</p>
+      <ul>
+        <li><a href="https://www.lensrent.ch/" target="_blank">Lensrent.ch</a></li>
+        <li><a href="https://www.thaimad.dk/" target="_blank">Thaimad.dk</a></li>
+      </ul>
     </div>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p>BCA – JG College, Gujarat University (2019)</p>
-    </div>
+  <section id="projects">
+    <h2>Projects</h2>
 
-    <div class="section">
-      <h2>Certifications & Achievements</h2>
-      <p>Not available at this time.</p>
+    <div class="project">
+      <h3>Magento Extension</h3>
+      <p>Built a custom module to develop table reservation functionality, Also create module for send daily turnover report on email.</p>
     </div>
-  </div>
+    <div class="project">
+      <h3>Personal Portfolio (This Site)</h3>
+      <p>Built a personal portfolio using HTML and CSS to showcase my projects and experience.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Opportunities</h2>
+    <p>Email: radhasharma1115@gmail.com</p>
+    <p>Open to: Magento Developer Roles | PHP Backend | Data Entry Projects | Software Internships | Data Analyst Internships</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/radha-sharma-238249193" target="_blank">radha-sharma</a></p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2025 Radha Sharma. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
