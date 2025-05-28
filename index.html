@@ -2,87 +2,209 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Radha Sharma| Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radha Sharma | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; margin: 0; padding: 0; }
-    header { background: #333; color: white; padding: 20px 0; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    .container { padding: 20px; max-width: 1000px; margin: auto; background: white; }
-    section { margin-bottom: 40px; }
-    h1, h2 { color: #333; }
-    footer { background: #eee; text-align: center; padding: 15px; }
-    .project { background: #f1f1f1; padding: 15px; border-radius: 5px; margin-bottom: 15px; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      padding: 3rem 1rem;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 2.8rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #2c3e50;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #1f4037;
+    }
+    .about p,
+    .skills ul,
+    .experience ul,
+    .projects .project-card,
+    .contact p {
+      margin-top: 1rem;
+    }
+    .skills ul, .experience ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+    .project-card {
+      background: white;
+      margin-top: 1rem;
+      padding: 1.5rem;
+      border-left: 5px solid #1f4037;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      background: #1f4037;
+      color: white;
+      padding: 1.5rem 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #1f4037;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      margin-top: 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+    .resume-download {
+      text-align: center;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Radha Sharma</h1>
+    <p>Software Developer | Aspiring Data Analyst</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
 
-<header>
-  <h1>Radha Sharma</h1>
-  <p>Software Developer | Data Analyst Enthusiast | Open to Internships</p>
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
-</header>
 
-<div class="container">
-
-  <section id="about">
+  <section id="about" class="about">
     <h2>About Me</h2>
-    <p>I’m a versatile software developer with 3 years of hands-on experience in Magento development and a strong interest in data analytics and automation. I have built and customized e-commerce platforms using Magento and PHP, and I enjoy building tools that solve real-world problems. I'm currently open to Magento/PHP roles, internships in data science or software development, and freelance opportunities in data entry or automation.</p>
+    <p>I’m a developer based in Ahmedabad with 4 years of experience in PHP and Magento 2. I'm passionate about creating smart solutions and expanding into data analysis using Python, SQL, and Excel. My goal is to bridge code and data to solve real-world problems.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Languages: PHP, Python, JavaScript, Jquery</li>
-      <li>Web: HTML, CSS, Magento, React</li>
-      <li>Data Tools: SQL, Excel</li>
-      <li>Backend: MySQL, REST APIs, Magento 2</li>
-      <li>Others: Git, Composer, E-commerce Systems, VS Code, Linux, Data Entry, MS Excel, Web Research </li>
+      <li>Magento 2, PHP, HTML/CSS</li>
+      <li>MySQL, AJAX, jQuery</li>
+      <li>Sublime, Visual Studio Code</li>
+      <li>Ubuntu, Basic GitHub</li>
+      <li>Python, SQL, Excel</li>
+      <li>Problem solving, theme integration/customization, Magento REST API & GraphQL (basic)</li>
     </ul>
   </section>
 
-  <div class="section">
-      <h2>Experience</h2>
-      <p><strong>Aktiv Software</strong> – Magento Developer<br />
-      Customized themes, developed modules, and created REST APIs.</p>
-      <p><strong>iFlair Technologies</strong> – Magento Developer<br />
-      Worked on client-based Magento development, including third-party integrations and reservation systems.</p>
-    </div>
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Ysoft Solution</strong> – Angular 9 Developer (Feb 2020 – Nov 2020)</li>
+      <li><strong>Icreative Technology</strong> – Magento 2 Developer (Feb 2021 – Sep 2022)</li>
+      <li><strong>Iflair Web Technology</strong> – Magento 2 Developer (Oct 2022 – May 2024)</li>
+      
+    </ul>
+  </section>
 
-  <section id="projects">
+  <section id="projects" class="projects">
     <h2>Projects</h2>
 
-    <div class="project">
-      <h3>Magento Extension</h3>
-      <p>Built a custom module to develop table reservation functionality, Also create module for send daily turnover report on email.</p>
+    <div class="project-card">
+      <h3>Lensrent</h3>
+      <p><strong>Role:</strong> Developer</p>
+      <p>Rental E-commerce platform for booking returnable items online.</p>
       <ul>
-        <li><a href="https://www.lensrent.ch/" target="_blank">Lensrent.ch</a></li>
-        <li><a href="https://www.thaimad.dk/" target="_blank">Thaimad.dk</a></li>
+        <li>Customized theme layout and blog extension</li>
+        <li>Integrated PostFinance payment system</li>
+        <li>Developed order confirmation email module</li>
+        <li>Migrated site to cloud hosting</li>
+        <li>Configured server speed optimization extensions</li>
       </ul>
     </div>
-    <div class="project">
-      <h3>Personal Portfolio (This Site)</h3>
-      <p>Built a personal portfolio using HTML and CSS to showcase my projects and experience.</p>
+
+    <div class="project-card">
+      <h3>Thaimad</h3>
+      <p><strong>Role:</strong> Developer</p>
+      <p>Multi-store food order platform with online & COD support.</p>
+      <ul>
+        <li>Added language switcher</li>
+        <li>Fixed user-survey email from third-party plugin</li>
+        <li>Implemented carry bag fee on checkout</li>
+        <li>Developed daily sales report module for admin</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>Medzone</h3>
+      <p><strong>Role:</strong> Developer</p>
+      <p>Multi-vendor E-commerce site under development.</p>
+      <ul>
+        <li>Developed and customized REST API for seller dashboard</li>
+        <li>Customized blog and testimonial modules</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>QualityCarCovers</h3>
+      <p><strong>Role:</strong> Developer</p>
+      <p>Online car cover store built with Magento 2.</p>
+      <ul>
+        <li>Upgraded Magento version 2.3.3 to 2.4.5</li>
+        <li>Customized category listing layout</li>
+        <li>Resolved add-to-cart product issue</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>DutchWoodCraft</h3>
+      <p><strong>Role:</strong> Developer</p>
+      <p>Online wooden product store.</p>
+      <ul>
+        <li>Optimized website speed and compressed images</li>
+      </ul>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact & Opportunities</h2>
-    <p>Email: radhasharma1115@gmail.com</p>
-    <p>Open to: Magento Developer Roles | PHP Backend | Data Entry Projects | Software Internships | Data Analyst Internships</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/radha-sharma-238249193" target="_blank">radha-sharma</a></p>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:radhasharma1115@gmail.com">radhasharma1115@gmail.com</a></p>
+    <p>Phone: +91 87800 32171</p>
+    <p>Location: Ahmedabad, Gujarat</p>
   </section>
 
-</div>
-
-<footer>
-  <p>© 2025 Radha Sharma. All rights reserved.</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Radha Sharma. Crafted with care.</p>
+  </footer>
 </body>
 </html>
