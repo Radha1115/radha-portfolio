@@ -3,208 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Radha Sharma | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      background-color: #f5f7fa;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(to right, #1f4037, #99f2c8);
-      padding: 3rem 1rem;
-      text-align: center;
-      color: white;
-    }
-    header h1 {
-      font-size: 2.8rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: #2c3e50;
-      padding: 1rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 4rem 2rem;
-    }
-    h2 {
-      margin-bottom: 1rem;
-      font-size: 2rem;
-      color: #1f4037;
-    }
-    .about p,
-    .skills ul,
-    .experience ul,
-    .projects .project-card,
-    .contact p {
-      margin-top: 1rem;
-    }
-    .skills ul, .experience ul {
-      list-style-type: square;
-      padding-left: 1.5rem;
-    }
-    .project-card {
-      background: white;
-      margin-top: 1rem;
-      padding: 1.5rem;
-      border-left: 5px solid #1f4037;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      background: #1f4037;
-      color: white;
-      padding: 1.5rem 0;
-    }
-    .btn {
-      display: inline-block;
-      background: #1f4037;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      margin-top: 1.5rem;
-      border-radius: 30px;
-      text-decoration: none;
-    }
-    .resume-download {
-      text-align: center;
-      margin-top: 2rem;
-    }
-  </style>
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
   <header>
-    <h1>Radha Sharma</h1>
-    <p>Software Developer | Aspiring Data Analyst(Fresher)</p>
-    <a href="#contact" class="btn">Contact Me</a>
+    <h1>Your Name</h1>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I’m a developer based in Ahmedabad with 4 years of experience in PHP and Magento 2. I'm passionate about creating smart solutions and expanding into data analysis using Python, SQL, and Excel. My goal is to bridge code and data to solve real-world problems.</p>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hi, I'm [Your Name]</h2>
+      <p>Front-End Developer & UI Designer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
   </section>
 
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Magento 2, PHP, HTML/CSS</li>
-      <li>MySQL, AJAX, jQuery</li>
-      <li>Sublime, Visual Studio Code</li>
-      <li>Ubuntu, Basic GitHub</li>
-      <li>Python, SQL, Excel</li>
-      <li>Problem solving, theme integration/customization, Magento REST API & GraphQL (basic)</li>
-    </ul>
-  </section>
-
-  <section id="experience" class="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Ysoft Solution</strong> – Angular 9 Developer (Feb 2020 – Nov 2020)</li>
-      <li><strong>Icreative Technology</strong> – Magento 2 Developer (Feb 2021 – Sep 2022)</li>
-      <li><strong>Iflair Web Technology</strong> – Magento 2 Developer (Oct 2022 – May 2024)</li>
-      
-    </ul>
-  </section>
-
-  <section id="projects" class="projects">
+  <section id="projects">
     <h2>Projects</h2>
-
-    <div class="project-card">
-      <h3>Lensrent</h3>
-      <p><strong>Role:</strong> Developer</p>
-      <p>Rental E-commerce platform for booking returnable items online.</p>
-      <ul>
-        <li>Customized theme layout and blog extension</li>
-        <li>Integrated PostFinance payment system</li>
-        <li>Developed order confirmation email module</li>
-        <li>Migrated site to cloud hosting</li>
-        <li>Configured server speed optimization extensions</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>Thaimad</h3>
-      <p><strong>Role:</strong> Developer</p>
-      <p>Multi-store food order platform with online & COD support.</p>
-      <ul>
-        <li>Added language switcher</li>
-        <li>Fixed user-survey email from third-party plugin</li>
-        <li>Implemented carry bag fee on checkout</li>
-        <li>Developed daily sales report module for admin</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>Medzone</h3>
-      <p><strong>Role:</strong> Developer</p>
-      <p>Multi-vendor E-commerce site under development.</p>
-      <ul>
-        <li>Developed and customized REST API for seller dashboard</li>
-        <li>Customized blog and testimonial modules</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>QualityCarCovers</h3>
-      <p><strong>Role:</strong> Developer</p>
-      <p>Online car cover store built with Magento 2.</p>
-      <ul>
-        <li>Upgraded Magento version 2.3.3 to 2.4.5</li>
-        <li>Customized category listing layout</li>
-        <li>Resolved add-to-cart product issue</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>DutchWoodCraft</h3>
-      <p><strong>Role:</strong> Developer</p>
-      <p>Online wooden product store.</p>
-      <ul>
-        <li>Optimized website speed and compressed images</li>
-      </ul>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/project1.png" alt="Project 1">
+        <h3>Weather App</h3>
+        <p>A responsive app using OpenWeatherMap API</p>
+        <div class="tech-icons">
+          <i class="fab fa-js"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn">Live</a>
+          <a href="#" class="btn">GitHub</a>
+        </div>
+      </div>
+      <!-- Repeat more projects -->
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <i class="fab fa-html5" title="HTML5"></i>
+      <i class="fab fa-css3-alt" title="CSS3"></i>
+      <i class="fab fa-js" title="JavaScript"></i>
+      <i class="fab fa-react" title="React"></i>
+      <i class="fab fa-node" title="Node.js"></i>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a front-end developer who loves building user-friendly and responsive websites. My passion lies in clean code and elegant UI design.</p>
+  </section>
+
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:radhasharma1115@gmail.com">radhasharma1115@gmail.com</a></p>
-    <p>Phone: +91 87800 32171</p>
-    <p>Location: Ahmedabad, Gujarat</p>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Radha Sharma. Crafted with care.</p>
+    <p>© 2025 Your Name</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
