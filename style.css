@@ -1,0 +1,88 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --accent: #0077ff;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #e0e0e0;
+  --accent: #00cfff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: var(--accent);
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero {
+  padding: 100px 20px;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.tech-icons i {
+  margin-right: 10px;
+}
+
+.skills-list i {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
